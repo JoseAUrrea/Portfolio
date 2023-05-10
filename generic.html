@@ -74,7 +74,10 @@
 						</body>
 							<h4>C</h4><br>
 							<p>
-							Given an input image, the program picks out the edges.
+							Given an input image, the program takes the image through 3 parts. 
+							Part 1 gets the derivatives for the x and y mask respectively then computes the convolutions. Finally the magnitude is calculated and an output image is produced.
+							Part 2 detects the peaks in the image using a double for loop that checks certain conditions to determine if a pixel is a peak. The output image with the peaks is produced.
+							Part 3 is a post processing step where certain features are selected in the image that meet criteria based on gradient magnitudes and connectivity. The final output image is produced.
 							</p>
 					</div>
 					<div class="box">
